@@ -140,6 +140,8 @@ ifconfig
 docker exec -it spring2 sh
 ping <spring1_IP>
 ```
+![bfeore ](ping.png)
+
 ---
 
 ## 5️⃣ Query Databases
