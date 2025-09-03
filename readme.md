@@ -1,5 +1,3 @@
-تمام 👌 هنزود للـ **README** رسمة بسيطة (ASCII diagram) توضح العلاقات بين **Spring apps** و **Databases** مع الـ networks. ده يخلي أي حد يقرأ يفهم الصورة بسرعة.
-
 ---
 
 # 🐳 Spring PetClinic with Multiple Databases and Networks
@@ -100,6 +98,11 @@ docker run -d --name spring1 --network petclinic-net \
   -e SPRING_DATASOURCE_PASSWORD=root \
   spring-petclinic:latest
 
+```
+![bfeore ](before.png)
+
+```bash
+
 # Spring 2 → also uses db1
 docker run -d --name spring2 --network petclinic-net \
   -p 8082:8080 \
@@ -107,6 +110,11 @@ docker run -d --name spring2 --network petclinic-net \
   -e SPRING_DATASOURCE_USERNAME=root \
   -e SPRING_DATASOURCE_PASSWORD=root \
   spring-petclinic:latest
+
+```
+![bfeore ](sp1.png)
+
+```bash
 
 # Spring 3 → uses db3 (different network & DB)
 docker run -d --name spring3 --network petclinic-net2 \
@@ -117,6 +125,7 @@ docker run -d --name spring3 --network petclinic-net2 \
   -e SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQL8Dialect \
   spring-petclinic:latest
 ```
+![bfeore ](sp2.png)
 
 ---
 
@@ -131,6 +140,7 @@ ifconfig
 docker exec -it spring2 sh
 ping <spring1_IP>
 ```
+![bfeore ](sp3.png)
 
 ---
 
