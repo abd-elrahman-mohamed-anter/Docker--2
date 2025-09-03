@@ -99,7 +99,7 @@ docker run -d --name spring1 --network petclinic-net \
   spring-petclinic:latest
 
 ```
-![bfeore ](before.png)
+![bfeore ](sp1.png)
 
 ```bash
 
@@ -112,7 +112,7 @@ docker run -d --name spring2 --network petclinic-net \
   spring-petclinic:latest
 
 ```
-![bfeore ](sp1.png)
+![bfeore ](sp2.png)
 
 ```bash
 
@@ -125,7 +125,7 @@ docker run -d --name spring3 --network petclinic-net2 \
   -e SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQL8Dialect \
   spring-petclinic:latest
 ```
-![bfeore ](sp2.png)
+![bfeore ](sp3.png)
 
 ---
 
@@ -140,8 +140,6 @@ ifconfig
 docker exec -it spring2 sh
 ping <spring1_IP>
 ```
-![bfeore ](sp3.png)
-
 ---
 
 ## 5️⃣ Query Databases
