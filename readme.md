@@ -192,3 +192,13 @@ Example Output:
 
 ### After the addition
 ![after ](after.png)
+
+## 🎯 Key Takeaways
+
+- **spring1** and **spring2** share the same DB (db1 → clinic1) → identical data.
+- **spring3** uses a separate DB (db3 → clinic3) → isolated dataset.
+- Demonstrates:
+  - Docker **multi-network setup**
+  - **DB persistence** using volumes
+  - **Container-to-container communication**
+
