@@ -176,6 +176,9 @@ Example Output:
 
 ---
 
+### Before the addition
 
+![bfeore ](before.png)
 
-تحب أضيف **لقطات شاشة (screenshots)** من الـ **UI بتاع Spring PetClinic** بحيث توري الاختلاف في الداتا بين 8081/8082 و 8083؟
+### After the addition
+![after ](after.png)
