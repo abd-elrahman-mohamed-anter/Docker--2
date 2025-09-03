@@ -70,12 +70,6 @@ docker run -d --name db1 --network petclinic-net \
   -v mysql-data1:/var/lib/mysql \
   mysql:8.0
 
-# DB2
-docker run -d --name db2 --network petclinic-net \
-  -e MYSQL_ROOT_PASSWORD=root \
-  -e MYSQL_DATABASE=clinic2 \
-  -v mysql-data2:/var/lib/mysql \
-  mysql:8.0
 
 # DB3
 docker run -d --name db3 --network petclinic-net2 \
