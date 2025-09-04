@@ -180,11 +180,11 @@ Example Output:
 
 ---
 
-### Before the addition
+### Before the modification
 
 ![bfeore ](before.png)
 
-### After the addition
+### After the modification
 ![after ](after.png)
 
 ## 🎯 Key Takeaways
